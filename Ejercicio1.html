@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio1|Calcular Sueldos</title>
+</head>
+<body>
+    <form>
+        <div style="align-items: center; flex-direction: column; height: 600px; background-color: #235e96; display:flex; margin-left: 680px; margin-right: 680px; margin-bottom: 10px;; font-family: Cambria; font-size: 20pt; border-radius: 20px;">
+            <h1>CALCULAR SUELDO</h1>
+            <p>Nombre: <input type="text" placeholder="Escriba su nombre y apellido" autofocus id="nombre"/> <br></p>
+            <p>Horas de trabajo:<input type="number" placeholder="20 horas" id="horas"/> <br></p>
+            <p>
+                <label for="categoria">Categoria:</label>
+                <select name="categoria" id="categoria">
+                    <option value="selecciona">Seleccione la categoría</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+            </p>
+            <p>
+                <label for="tiemposervicio">Años de servicio:</label>
+                <select name="tiemposervicio" id="tiemposervicio">
+                    <option value="selecciona1">Seleccione años de servicio</option>
+                    <option value="1">1-3 años</option>
+                    <option value="2">4-7 años</option>
+                    <option value="3">8-12 años</option>
+                    <option value="4">13-más años</option>
+                </select>
+            </p>
+            <input type="button" value="CALCULAR" onclick="calcularSueldos()" style="background-color:#226e85; font-size: 17pt; font-family:fantasy"><br><br>
+        </div>     
+    </form>
+
+    <script src="Ejercicio1.js"></script>
+</body>
+</html>
